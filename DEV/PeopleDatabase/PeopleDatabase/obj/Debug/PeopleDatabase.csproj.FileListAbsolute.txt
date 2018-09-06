@@ -1,0 +1,14 @@
+C:\Pozostałe\ProgramBazaDanychMagda\DEV\PeopleDatabase\PeopleDatabase\obj\Debug\PeopleDatabase.csprojAssemblyReference.cache
+C:\Pozostałe\ProgramBazaDanychMagda\DEV\PeopleDatabase\PeopleDatabase\obj\Debug\PeopleDatabase.LogIn.resources
+C:\Pozostałe\ProgramBazaDanychMagda\DEV\PeopleDatabase\PeopleDatabase\obj\Debug\PeopleDatabase.Properties.Resources.resources
+C:\Pozostałe\ProgramBazaDanychMagda\DEV\PeopleDatabase\PeopleDatabase\obj\Debug\PeopleDatabase.csproj.GenerateResource.cache
+C:\Pozostałe\ProgramBazaDanychMagda\DEV\PeopleDatabase\PeopleDatabase\obj\Debug\PeopleDatabase.csproj.CoreCompileInputs.cache
+C:\Pozostałe\ProgramBazaDanychMagda\DEV\PeopleDatabase\PeopleDatabase\bin\Debug\PeopleDatabase.exe.config
+C:\Pozostałe\ProgramBazaDanychMagda\DEV\PeopleDatabase\PeopleDatabase\bin\Debug\PeopleDatabase.exe
+C:\Pozostałe\ProgramBazaDanychMagda\DEV\PeopleDatabase\PeopleDatabase\bin\Debug\PeopleDatabase.pdb
+C:\Pozostałe\ProgramBazaDanychMagda\DEV\PeopleDatabase\PeopleDatabase\obj\Debug\PeopleDatabase.exe
+C:\Pozostałe\ProgramBazaDanychMagda\DEV\PeopleDatabase\PeopleDatabase\obj\Debug\PeopleDatabase.pdb
+C:\Pozostałe\ProgramBazaDanychMagda\DEV\PeopleDatabase\PeopleDatabase\bin\Debug\PeopleDatabase.exe.manifest
+C:\Pozostałe\ProgramBazaDanychMagda\DEV\PeopleDatabase\PeopleDatabase\bin\Debug\PeopleDatabase.application
+C:\Pozostałe\ProgramBazaDanychMagda\DEV\PeopleDatabase\PeopleDatabase\obj\Debug\PeopleDatabase.exe.manifest
+C:\Pozostałe\ProgramBazaDanychMagda\DEV\PeopleDatabase\PeopleDatabase\obj\Debug\PeopleDatabase.application
