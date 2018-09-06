@@ -24,8 +24,9 @@ namespace PeopleDatabase
 
             if (chechUserPassword(user,password))
             {
-                AppStart AppStartDB = new AppStart();
-                this.Show(AppStartDB);
+                AppStart AppStartDB = new AppStart(this);
+                this.Visible = false;
+                AppStartDB.ShowDialog();
             }
             else
             {

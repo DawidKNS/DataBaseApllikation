@@ -28,12 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "AppStart";
+            this.SuspendLayout();
+            // 
+            // AppStart
+            // 
+            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Name = "AppStart";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AppStart_FormClosing);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.MenuStrip menuStrip1;
     }
 }
