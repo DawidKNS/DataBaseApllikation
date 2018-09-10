@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PeopleDatabase.exe" size="11232">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PeopleDatabase.exe" size="11744">
       <assemblyIdentity name="PeopleDatabase" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>m9OPs0wlgTdJED0os/rs+Mj6AzhsQGtui3boAjAucAI=</dsig:DigestValue>
+        <dsig:DigestValue>7fnUKDrCmUSJWH+W9bmnHmJk2W4Id6+ujT4BNn90tNs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

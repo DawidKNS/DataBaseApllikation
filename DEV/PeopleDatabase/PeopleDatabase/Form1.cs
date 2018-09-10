@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -37,14 +38,31 @@ namespace PeopleDatabase
 
         public bool chechUserPassword(string user, string password)
         {
-            if (user == "Dawid" & password == "Dawid")
-                return true;
-            else
+            SqlConnection con = new SqlConnection();
+            con.ConnectionString = (@"Data Source=C:\Pozostałe\DataBaseApllikation\DataBaseApllikation\DEV\PeopleDatabase\BazaDanych\DBapp");
+            con.Open();
+
+            string txtUser = user;
+            string txtPasswd = password;
+            string query = "SELECT * FROM Logowanie WHERE UsersName=@user AND UsersPasswd=@passwd";
+            SqlCommand cmd = new SqlCommand(query, con);
+
+            cmd.Parameters.AddWithValue("@user", txtUser);
+            cmd.Parameters.AddWithValue("@passwd", txtPasswd);
+
+            SqlDataReader dr = cmd.ExecuteReader();
+            if (dr.HasRows == true)
             {
 
+                MessageBox.Show("Zalogowano poprawnie");
+                return true;
             }
-            return false;
 
+            else
+            {
+                MessageBox.Show("Błąd logowania");
+                return false;
+            }
         }
     }
 }
