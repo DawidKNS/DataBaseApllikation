@@ -76,13 +76,13 @@
             // databasesToolStripMenuItem
             // 
             this.databasesToolStripMenuItem.Name = "databasesToolStripMenuItem";
-            this.databasesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.databasesToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.databasesToolStripMenuItem.Text = "Databases";
             // 
             // fTPToolStripMenuItem
             // 
             this.fTPToolStripMenuItem.Name = "fTPToolStripMenuItem";
-            this.fTPToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.fTPToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.fTPToolStripMenuItem.Text = "FTP";
             // 
             // User_txt
@@ -99,7 +99,6 @@
             // 
             this.textBox_User.Location = new System.Drawing.Point(311, 139);
             this.textBox_User.Name = "textBox_User";
-            this.textBox_User.PasswordChar = '*';
             this.textBox_User.Size = new System.Drawing.Size(172, 20);
             this.textBox_User.TabIndex = 3;
             // 
@@ -107,6 +106,7 @@
             // 
             this.textBox_password.Location = new System.Drawing.Point(311, 183);
             this.textBox_password.Name = "textBox_password";
+            this.textBox_password.PasswordChar = '*';
             this.textBox_password.Size = new System.Drawing.Size(172, 20);
             this.textBox_password.TabIndex = 4;
             // 

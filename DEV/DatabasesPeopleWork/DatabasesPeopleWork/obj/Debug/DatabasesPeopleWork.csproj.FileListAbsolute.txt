@@ -4,3 +4,10 @@ C:\Pozostałe\ProgramyMoje\DEV\DatabasesPeopleWork\DatabasesPeopleWork\obj\Debug
 C:\Pozostałe\ProgramyMoje\DEV\DatabasesPeopleWork\DatabasesPeopleWork\obj\Debug\DatabasesPeopleWork.Properties.Resources.resources
 C:\Pozostałe\ProgramyMoje\DEV\DatabasesPeopleWork\DatabasesPeopleWork\obj\Debug\DatabasesPeopleWork.csproj.GenerateResource.cache
 C:\Pozostałe\ProgramyMoje\DEV\DatabasesPeopleWork\DatabasesPeopleWork\obj\Debug\DatabasesPeopleWork.csproj.CoreCompileInputs.cache
+C:\Pozostałe\ProgramyMoje\DEV\DatabasesPeopleWork\DatabasesPeopleWork\bin\Debug\DatabasesPeopleWork.exe.config
+C:\Pozostałe\ProgramyMoje\DEV\DatabasesPeopleWork\DatabasesPeopleWork\bin\Debug\DatabasesPeopleWork.exe
+C:\Pozostałe\ProgramyMoje\DEV\DatabasesPeopleWork\DatabasesPeopleWork\bin\Debug\DatabasesPeopleWork.pdb
+C:\Pozostałe\ProgramyMoje\DEV\DatabasesPeopleWork\DatabasesPeopleWork\bin\Debug\System.Data.SQLite.dll
+C:\Pozostałe\ProgramyMoje\DEV\DatabasesPeopleWork\DatabasesPeopleWork\obj\Debug\DatabasesPeopleWork.csproj.CopyComplete
+C:\Pozostałe\ProgramyMoje\DEV\DatabasesPeopleWork\DatabasesPeopleWork\obj\Debug\DatabasesPeopleWork.exe
+C:\Pozostałe\ProgramyMoje\DEV\DatabasesPeopleWork\DatabasesPeopleWork\obj\Debug\DatabasesPeopleWork.pdb

@@ -24,7 +24,7 @@ namespace DatabasesPeopleWork
             string user = this.textBox_User.Text;
             string password = this.textBox_password.Text;
 
-            if (dataBaseConnectiong.checkUserPassword(user,password)
+            if (dataBaseConnectiong.checkUserPassword(user,password))
             {
                 DataBaseExplorer AppStartDB = new DataBaseExplorer(this);
                 this.Visible = false;

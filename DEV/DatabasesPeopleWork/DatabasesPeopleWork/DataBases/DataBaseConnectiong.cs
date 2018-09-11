@@ -19,7 +19,7 @@ namespace DatabasesPeopleWork.DataBases
         {
             using (var con = new SQLiteConnection())
             {
-                con.ConnectionString = (@"Data Source=C:\Users\d.kondracki\Downloads\DataBaseApllikation-master\DEV\PeopleDatabase\BazaDanych\DBapp.s3db");
+                con.ConnectionString = (@"Data Source=C:\Pozostałe\ProgramyMoje\DEV\DatabasesPeopleWork\DatabasesPeopleWork\DataBases\DBapp.s3db");
                 con.Open();
                 string txtUser = user;
                 string txtPasswd = password;
