@@ -8,13 +8,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DatabasesPeopleWork;
 
 
 namespace DatabasesPeopleWork.DataBases
 {
-    class DataBaseConnectiong
+    public class DataBaseConnectiong
     {
-        public bool chechUserPassword(string user, string password)
+        public bool checkUserPassword(string user, string password)
         {
             using (var con = new SQLiteConnection())
             {

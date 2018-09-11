@@ -49,6 +49,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataBases\DataBaseConnectiong.cs" />
+    <Compile Include="DataBases\DataBaseExplorer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataBases\DataBaseExplorer.Designer.cs">
+      <DependentUpon>DataBaseExplorer.cs</DependentUpon>
+    </Compile>
     <Compile Include="LogIn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +69,9 @@
     <Compile Include="Settings\Settings.Designer.cs">
       <DependentUpon>Settings.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="DataBases\DataBaseExplorer.resx">
+      <DependentUpon>DataBaseExplorer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>
     </EmbeddedResource>
