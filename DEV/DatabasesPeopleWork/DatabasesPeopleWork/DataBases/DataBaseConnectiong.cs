@@ -19,15 +19,15 @@ namespace DatabasesPeopleWork.DataBases
         {
             using (var con = new SQLiteConnection())
             {
-                con.ConnectionString = @"Data Source=C:\Pozostałe\ProgramyMoje\DEV\DatabasesPeopleWork\DatabasesPeopleWork\DataBases\DBapp.s3db";
+                con.ConnectionString = (@"Data Source=C:\Pozostałe\ProgramyMoje\DEV\DatabasesPeopleWork\DatabasesPeopleWork\DataBases\DBapp.s3db");
                 con.Open();
                 string txtUser = user;
                 string txtPasswd = password;
-                string query = "SELECT * FROM Logowanie WHERE txtUser=@user AND txtPasswd=@passwd";
+                string query = "SELECT * FROM users WHERE UsersName=@userl AND UsersPassword=@passwdl";
                 var cmd = new SQLiteCommand(query,con);
 
-                cmd.Parameters.AddWithValue("@user", txtUser);
-                cmd.Parameters.AddWithValue("@passwd", txtPasswd);
+                cmd.Parameters.AddWithValue("@userl", txtUser);
+                cmd.Parameters.AddWithValue("@passwdl", txtPasswd);
 
                 var dr = cmd.ExecuteReader();
                 if (dr.HasRows == true)
