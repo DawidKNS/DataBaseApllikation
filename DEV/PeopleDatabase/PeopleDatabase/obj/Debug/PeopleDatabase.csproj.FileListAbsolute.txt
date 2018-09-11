@@ -27,3 +27,11 @@ C:\Pozostałe\DataBaseApllikation\DataBaseApllikation\DEV\PeopleDatabase\PeopleD
 C:\Pozostałe\DataBaseApllikation\DataBaseApllikation\DEV\PeopleDatabase\PeopleDatabase\obj\Debug\PeopleDatabase.application
 C:\Pozostałe\DataBaseApllikation\DataBaseApllikation\DEV\PeopleDatabase\PeopleDatabase\obj\Debug\PeopleDatabase.exe
 C:\Pozostałe\DataBaseApllikation\DataBaseApllikation\DEV\PeopleDatabase\PeopleDatabase\obj\Debug\PeopleDatabase.pdb
+C:\Pozostałe\ProgramyMoje\DEV\PeopleDatabase\PeopleDatabase\obj\Debug\PeopleDatabase.csprojAssemblyReference.cache
+C:\Pozostałe\ProgramyMoje\DEV\PeopleDatabase\PeopleDatabase\obj\Debug\PeopleDatabase.AppStart.resources
+C:\Pozostałe\ProgramyMoje\DEV\PeopleDatabase\PeopleDatabase\obj\Debug\PeopleDatabase.LogIn.resources
+C:\Pozostałe\ProgramyMoje\DEV\PeopleDatabase\PeopleDatabase\obj\Debug\PeopleDatabase.Properties.Resources.resources
+C:\Pozostałe\ProgramyMoje\DEV\PeopleDatabase\PeopleDatabase\obj\Debug\PeopleDatabase.csproj.GenerateResource.cache
+C:\Pozostałe\ProgramyMoje\DEV\PeopleDatabase\PeopleDatabase\obj\Debug\PeopleDatabase.csproj.CoreCompileInputs.cache
+C:\Pozostałe\ProgramyMoje\DEV\PeopleDatabase\PeopleDatabase\obj\Debug\PeopleDatabase.exe
+C:\Pozostałe\ProgramyMoje\DEV\PeopleDatabase\PeopleDatabase\obj\Debug\PeopleDatabase.pdb
