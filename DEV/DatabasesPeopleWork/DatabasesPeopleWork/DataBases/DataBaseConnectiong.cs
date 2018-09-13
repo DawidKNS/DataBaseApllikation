@@ -15,6 +15,11 @@ namespace DatabasesPeopleWork.DataBases
 {
     public class DataBaseConnectiong
     {
+
+        public bool DBConnection
+
+
+
         public bool checkUserPassword(string user, string password)
         {
             using (var con = new SQLiteConnection())

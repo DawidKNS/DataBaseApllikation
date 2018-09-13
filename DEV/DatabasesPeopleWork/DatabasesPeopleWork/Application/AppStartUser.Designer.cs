@@ -1,6 +1,6 @@
 ﻿namespace DatabasesPeopleWork.DataBases
 {
-    partial class DataBaseExplorer
+    partial class User_Window
     {
         /// <summary>
         /// Required designer variable.
@@ -28,17 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.Welcome_txtU = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // DataBaseExplorer
+            // Welcome_txtU
             // 
-            this.ClientSize = new System.Drawing.Size(284, 261);
-            this.Name = "DataBaseExplorer";
+            this.Welcome_txtU.AutoSize = true;
+            this.Welcome_txtU.Location = new System.Drawing.Point(305, 22);
+            this.Welcome_txtU.Name = "Welcome_txtU";
+            this.Welcome_txtU.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Welcome_txtU.Size = new System.Drawing.Size(101, 25);
+            this.Welcome_txtU.TabIndex = 0;
+            this.Welcome_txtU.Text = "Welcome!";
+            this.Welcome_txtU.Click += new System.EventHandler(this.Welcome_txtU_Click);
+            // 
+            // User_Window
+            // 
+            this.ClientSize = new System.Drawing.Size(751, 546);
+            this.Controls.Add(this.Welcome_txtU);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Name = "User_Window";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.DataBaseExplorer_FormClosed);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Label Welcome_txtU;
     }
 }

@@ -49,11 +49,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataBases\DataBaseConnectiong.cs" />
-    <Compile Include="DataBases\DataBaseExplorer.cs">
+    <Compile Include="Application\AppStartUser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DataBases\DataBaseExplorer.Designer.cs">
-      <DependentUpon>DataBaseExplorer.cs</DependentUpon>
+    <Compile Include="Application\AppStartUser.Designer.cs">
+      <DependentUpon>AppStartUser.cs</DependentUpon>
     </Compile>
     <Compile Include="LogIn.cs">
       <SubType>Form</SubType>
@@ -69,8 +69,8 @@
     <Compile Include="Settings\Settings.Designer.cs">
       <DependentUpon>Settings.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="DataBases\DataBaseExplorer.resx">
-      <DependentUpon>DataBaseExplorer.cs</DependentUpon>
+    <EmbeddedResource Include="Application\AppStartUser.resx">
+      <DependentUpon>AppStartUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>
@@ -97,8 +97,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Application\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

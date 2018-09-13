@@ -10,15 +10,15 @@ using System.Windows.Forms;
 
 namespace DatabasesPeopleWork.DataBases
 {
-    public partial class DataBaseExplorer : Form
+    public partial class User_Window : Form
     {
         LogIn LoginWindow;
-        public DataBaseExplorer()
+        public User_Window()
         {
             InitializeComponent();
         }
 
-        public DataBaseExplorer(LogIn loginWindow)
+        public User_Window(LogIn loginWindow)
         {
             InitializeComponent();
             LoginWindow = loginWindow;
@@ -27,6 +27,11 @@ namespace DatabasesPeopleWork.DataBases
         private void DataBaseExplorer_FormClosed(object sender, FormClosedEventArgs e)
         {
             LoginWindow.Visible = true;
+        }
+
+        private void Welcome_txtU_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

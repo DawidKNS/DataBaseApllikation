@@ -26,7 +26,7 @@ namespace DatabasesPeopleWork
 
             if (dataBaseConnectiong.checkUserPassword(user,password))
             {
-                DataBaseExplorer AppStartDB = new DataBaseExplorer(this);
+                User_Window AppStartDB = new User_Window(this);
                 this.Visible = false;
                 AppStartDB.ShowDialog();
             }
