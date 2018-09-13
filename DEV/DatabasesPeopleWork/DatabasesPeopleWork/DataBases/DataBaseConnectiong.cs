@@ -15,16 +15,15 @@ namespace DatabasesPeopleWork.DataBases
 {
     public class DataBaseConnectiong
     {
-
-        public bool DBConnection
-
-
-
-        public bool checkUserPassword(string user, string password)
+        public bool CheckUserPassword(string user, string password)
         {
+            ConnectionStringDB ConnectionStringDB_string = new ConnectionStringDB();
+            ConnectionStringDB_string.DBLocalization =(@"C:\Pozostałe\ProgramyMoje\DEV\DatabasesPeopleWork\DatabasesPeopleWork\DataBases\");
+            ConnectionStringDB_string.DBName = "DBapp";
+
             using (var con = new SQLiteConnection())
             {
-                con.ConnectionString = (@"Data Source=C:\Pozostałe\ProgramyMoje\DEV\DatabasesPeopleWork\DatabasesPeopleWork\DataBases\DBapp.s3db");
+                con.ConnectionString = (String)ConnectionStringDB_string;
                 con.Open();
                 string txtUser = user;
                 string txtPasswd = password;

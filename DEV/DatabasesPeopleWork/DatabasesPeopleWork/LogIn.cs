@@ -18,13 +18,13 @@ namespace DatabasesPeopleWork
             InitializeComponent();
         }
 
-        private void button_login_Click(object sender, EventArgs e)
+        private void Button_login_Click(object sender, EventArgs e)
         {
             DataBaseConnectiong dataBaseConnectiong = new DataBaseConnectiong();
             string user = this.textBox_User.Text;
             string password = this.textBox_password.Text;
 
-            if (dataBaseConnectiong.checkUserPassword(user,password))
+            if (dataBaseConnectiong.CheckUserPassword(user,password))
             {
                 User_Window AppStartDB = new User_Window(this);
                 this.Visible = false;
