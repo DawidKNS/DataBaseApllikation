@@ -8,7 +8,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using DatabasesPeopleWork;
 
 
 namespace DatabasesPeopleWork.DataBases
@@ -17,13 +16,9 @@ namespace DatabasesPeopleWork.DataBases
     {
         public bool CheckUserPassword(string user, string password)
         {
-            ConnectionStringDB ConnectionStringDB_string = new ConnectionStringDB();
-            ConnectionStringDB_string.DBLocalization =(@"C:\Pozostałe\ProgramyMoje\DEV\DatabasesPeopleWork\DatabasesPeopleWork\DataBases\");
-            ConnectionStringDB_string.DBName = "DBapp";
-
             using (var con = new SQLiteConnection())
             {
-                con.ConnectionString = (String)ConnectionStringDB_string;
+                con.ConnectionString = @"C:\Pozostałe\ProgramyMoje\DEV\DatabasesPeopleWork\DatabasesPeopleWork\DataBases\DBapp.s3db";
                 con.Open();
                 string txtUser = user;
                 string txtPasswd = password;

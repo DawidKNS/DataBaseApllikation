@@ -48,7 +48,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataBases\ConnectionStringDB.cs" />
     <Compile Include="DataBases\DataBaseConnectiong.cs" />
     <Compile Include="Application\AppStartUser.cs">
       <SubType>Form</SubType>
