@@ -15,7 +15,7 @@ namespace DatabasesPeopleWork.DataBases
 {
     public class DataBaseConnectiong
     {
-        public static string connstring = ConfigurationManager.ConnectionStrings["ConnStrDB"].ConnectionString;
+        public readonly string connstring = ConfigurationManager.ConnectionStrings["ConnStrDB"].ConnectionString.ToString();
 
         public bool CheckUserPassword(string user, string password)
         {
