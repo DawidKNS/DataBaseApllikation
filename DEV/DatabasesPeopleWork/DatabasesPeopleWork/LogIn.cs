@@ -39,7 +39,7 @@ namespace DatabasesPeopleWork
 
         private void settingsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Settings_Name settings = new Settings_Name();
+            Settings_Name settings = new Settings_Name(this);
             this.Visible = false;
             settings.ShowDialog();
 

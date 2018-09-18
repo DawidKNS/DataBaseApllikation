@@ -34,7 +34,8 @@
             // 
             this.ClientSize = new System.Drawing.Size(284, 261);
             this.Name = "User_Window";
-            this.Text = "AppStartUser";
+            this.Text = "DatabasesPepolWork - User";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.DataBaseExplorer_FormClosed);
             this.ResumeLayout(false);
 
         }
