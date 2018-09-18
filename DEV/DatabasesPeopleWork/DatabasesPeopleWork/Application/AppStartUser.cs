@@ -29,9 +29,5 @@ namespace DatabasesPeopleWork.DataBases
             LoginWindow.Visible = true;
         }
 
-        private void Welcome_txtU_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

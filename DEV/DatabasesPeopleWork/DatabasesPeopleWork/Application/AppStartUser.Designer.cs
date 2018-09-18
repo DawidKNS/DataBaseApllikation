@@ -40,7 +40,6 @@
             this.Welcome_txtU.Size = new System.Drawing.Size(101, 25);
             this.Welcome_txtU.TabIndex = 0;
             this.Welcome_txtU.Text = "Welcome!";
-            this.Welcome_txtU.Click += new System.EventHandler(this.Welcome_txtU_Click);
             // 
             // User_Window
             // 

@@ -1,4 +1,3 @@
-C:\Pozostałe\ProgramyMoje\DEV\DatabasesPeopleWork\DatabasesPeopleWork\obj\Debug\DatabasesPeopleWork.csprojAssemblyReference.cache
 C:\Pozostałe\ProgramyMoje\DEV\DatabasesPeopleWork\DatabasesPeopleWork\obj\Debug\DatabasesPeopleWork.LogIn.resources
 C:\Pozostałe\ProgramyMoje\DEV\DatabasesPeopleWork\DatabasesPeopleWork\obj\Debug\DatabasesPeopleWork.Properties.Resources.resources
 C:\Pozostałe\ProgramyMoje\DEV\DatabasesPeopleWork\DatabasesPeopleWork\obj\Debug\DatabasesPeopleWork.csproj.GenerateResource.cache
@@ -11,3 +10,4 @@ C:\Pozostałe\ProgramyMoje\DEV\DatabasesPeopleWork\DatabasesPeopleWork\obj\Debug
 C:\Pozostałe\ProgramyMoje\DEV\DatabasesPeopleWork\DatabasesPeopleWork\obj\Debug\DatabasesPeopleWork.exe
 C:\Pozostałe\ProgramyMoje\DEV\DatabasesPeopleWork\DatabasesPeopleWork\obj\Debug\DatabasesPeopleWork.pdb
 C:\Pozostałe\ProgramyMoje\DEV\DatabasesPeopleWork\DatabasesPeopleWork\obj\Debug\DatabasesPeopleWork.DataBases.User_Window.resources
+C:\Pozostałe\ProgramyMoje\DEV\DatabasesPeopleWork\DatabasesPeopleWork\obj\Debug\DatabasesPeopleWork.csprojAssemblyReference.cache

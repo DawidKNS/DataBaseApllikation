@@ -8,17 +8,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Configuration;
 
 
 namespace DatabasesPeopleWork.DataBases
 {
     public class DataBaseConnectiong
     {
+        public static string connstring = ConfigurationManager.ConnectionStrings["ConnStrDB"].ConnectionString;
+
         public bool CheckUserPassword(string user, string password)
         {
-            using (var con = new SQLiteConnection())
+            using (var con = new SQLiteConnection(connstring))
             {
-                con.ConnectionString = @"C:\Pozostałe\ProgramyMoje\DEV\DatabasesPeopleWork\DatabasesPeopleWork\DataBases\DBapp.s3db";
                 con.Open();
                 string txtUser = user;
                 string txtPasswd = password;
