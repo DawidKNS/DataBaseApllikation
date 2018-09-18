@@ -10,11 +10,23 @@ using System.Windows.Forms;
 
 namespace DatabasesPeopleWork.Settings
 {
-    public partial class Settings : Form
+    public partial class Settings_Name : Form
     {
-        public Settings()
+        LogIn LoginWindow;
+        public Settings_Name()
         {
             InitializeComponent();
+        }
+
+        public Settings_Name(LogIn loginWindow)
+        {
+            InitializeComponent();
+            LoginWindow = loginWindow;
+        }
+
+        private void Settings_Name_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            LoginWindow.Visible = true;
         }
     }
 }

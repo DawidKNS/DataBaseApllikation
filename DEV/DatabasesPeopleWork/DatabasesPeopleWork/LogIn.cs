@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DatabasesPeopleWork.DataBases;
+using DatabasesPeopleWork.Settings;
 
 namespace DatabasesPeopleWork
 {
@@ -34,6 +35,14 @@ namespace DatabasesPeopleWork
             {
                 MessageBox.Show("Błędny Login lub Hasło");
             }
+        }
+
+        private void settingsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Settings_Name settings = new Settings_Name();
+            this.Visible = false;
+            settings.ShowDialog();
+
         }
     }
 }

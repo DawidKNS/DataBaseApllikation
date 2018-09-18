@@ -28,6 +28,5 @@ namespace DatabasesPeopleWork.DataBases
         {
             LoginWindow.Visible = true;
         }
-
     }
 }

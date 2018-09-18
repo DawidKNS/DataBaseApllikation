@@ -11,3 +11,4 @@ C:\Pozostałe\ProgramyMoje\DEV\DatabasesPeopleWork\DatabasesPeopleWork\obj\Debug
 C:\Pozostałe\ProgramyMoje\DEV\DatabasesPeopleWork\DatabasesPeopleWork\obj\Debug\DatabasesPeopleWork.pdb
 C:\Pozostałe\ProgramyMoje\DEV\DatabasesPeopleWork\DatabasesPeopleWork\obj\Debug\DatabasesPeopleWork.DataBases.User_Window.resources
 C:\Pozostałe\ProgramyMoje\DEV\DatabasesPeopleWork\DatabasesPeopleWork\obj\Debug\DatabasesPeopleWork.csprojAssemblyReference.cache
+C:\Pozostałe\ProgramyMoje\DEV\DatabasesPeopleWork\DatabasesPeopleWork\obj\Debug\DatabasesPeopleWork.Settings.Settings_Name.resources
