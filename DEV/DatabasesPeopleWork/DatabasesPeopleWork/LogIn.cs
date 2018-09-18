@@ -19,7 +19,7 @@ namespace DatabasesPeopleWork
             InitializeComponent();
         }
 
-        private void Button_login_Click(object sender, EventArgs e)
+        public void Button_login_Click(object sender, EventArgs e)
         {
             DataBaseConnectiong dataBaseConnectiong = new DataBaseConnectiong();
             string user = this.textBox_User.Text;
@@ -30,6 +30,8 @@ namespace DatabasesPeopleWork
                 User_Window AppStartDB = new User_Window(this);
                 this.Visible = false;
                 AppStartDB.ShowDialog();
+                textBox_User.Text = "";
+                textBox_password.Text = "";
             }
             else
             {
@@ -42,7 +44,8 @@ namespace DatabasesPeopleWork
             Settings_Name settings = new Settings_Name(this);
             this.Visible = false;
             settings.ShowDialog();
-
+            textBox_User.Text = "";
+            textBox_password.Text = "";
         }
     }
 }

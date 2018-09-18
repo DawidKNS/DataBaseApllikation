@@ -41,7 +41,5 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label Welcome_txtU;
     }
 }
