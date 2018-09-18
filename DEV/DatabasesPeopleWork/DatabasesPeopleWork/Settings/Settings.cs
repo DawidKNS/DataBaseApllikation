@@ -18,7 +18,7 @@ namespace DatabasesPeopleWork.Settings
         {
             InitializeComponent();
         }
-
+        #region for window back
         public Settings_Name(LogIn loginWindow)
         {
             InitializeComponent();
@@ -29,5 +29,6 @@ namespace DatabasesPeopleWork.Settings
         {
             LoginWindow.Visible = true;
         }
+        #endregion
     }
 }

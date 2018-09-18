@@ -36,6 +36,7 @@
             this.button_login = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.MessageTXTlogin = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -115,11 +116,22 @@
             this.settingsToolStripMenuItem.Text = "Settings";
             this.settingsToolStripMenuItem.Click += new System.EventHandler(this.settingsToolStripMenuItem_Click);
             // 
+            // MessageTXTlogin
+            // 
+            this.MessageTXTlogin.AutoSize = true;
+            this.MessageTXTlogin.Font = new System.Drawing.Font("MS Reference Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.MessageTXTlogin.ForeColor = System.Drawing.Color.Red;
+            this.MessageTXTlogin.Location = new System.Drawing.Point(243, 349);
+            this.MessageTXTlogin.Name = "MessageTXTlogin";
+            this.MessageTXTlogin.Size = new System.Drawing.Size(0, 26);
+            this.MessageTXTlogin.TabIndex = 8;
+            // 
             // LogIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(609, 414);
+            this.Controls.Add(this.MessageTXTlogin);
             this.Controls.Add(this.button_login);
             this.Controls.Add(this.password_txt);
             this.Controls.Add(this.textBox_password);
@@ -146,6 +158,7 @@
         private System.Windows.Forms.Button button_login;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
+        private System.Windows.Forms.Label MessageTXTlogin;
     }
 }
 

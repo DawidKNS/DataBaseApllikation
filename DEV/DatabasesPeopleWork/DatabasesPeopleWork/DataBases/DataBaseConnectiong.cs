@@ -15,18 +15,33 @@ namespace DatabasesPeopleWork.DataBases
 {
     public class DataBaseConnectiong
     {
+        //Connection string upload to config file
         public readonly string connstring = ConfigurationManager.ConnectionStrings["ConnStrDB"].ConnectionString.ToString();
 
+        //check password
         public bool CheckUserPassword(string user, string password)
         {
             using (var con = new SQLiteConnection(connstring))
             {
-                con.Open();
+                //open comunication from databases
+                try
+                {
+                    con.Open();
+                }
+                catch (Exception OpenConnectionDB)
+                {
+                    Console.WriteLine("{0} Exception caught.", OpenConnectionDB);
+                }
+
                 string txtUser = user;
                 string txtPasswd = password;
-                string query = "SELECT * FROM users WHERE UsersName=@userl AND UsersPassword=@passwdl";
-                var cmd = new SQLiteCommand(query,con);
 
+                //select
+                string query = "SELECT * FROM users WHERE UsersName=@userl AND UsersPassword=@passwdl";
+
+                //send select to databases
+                var cmd = new SQLiteCommand(query, con);
+                //check user and password
                 cmd.Parameters.AddWithValue("@userl", txtUser);
                 cmd.Parameters.AddWithValue("@passwdl", txtPasswd);
 
