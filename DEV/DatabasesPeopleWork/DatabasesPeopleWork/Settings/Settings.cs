@@ -1,13 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Configuration;
 using System.Windows.Forms;
-using DatabasesPeopleWork;
+using System.Xml;
 
 namespace DatabasesPeopleWork.Settings
 {
@@ -30,5 +24,29 @@ namespace DatabasesPeopleWork.Settings
             LoginWindow.Visible = true;
         }
         #endregion
+
+        private void Button_UpdateConnectionStringDB_Click(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.ConnectionString = TextBox_ConnectionStringDB.Text;
+            Properties.Settings.Default.Save();
+        }
+
+        private void Settings_Name_Load(object sender, EventArgs e)
+        {
+            TextBox_ConnectionStringDB.Text = Properties.Settings.Default.ConnectionString;
+            textBox_DatabaseName.Text = Properties.Settings.Default.DBName;
+        }
+
+        private void buttonUP_DatabaseName_Click(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.DBName = textBox_DatabaseName.Text;
+            Properties.Settings.Default.Save();
+        }
+
+        private void button_UpdateAll_Click(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.ConnectionString = TextBox_ConnectionStringDB.Text;
+            Properties.Settings.Default.DBName = textBox_DatabaseName.Text;
+        }
     }
 }

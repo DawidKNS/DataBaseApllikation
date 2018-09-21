@@ -15,8 +15,7 @@ namespace DatabasesPeopleWork.DataBases
 {
     public class DataBaseConnectiong
     {
-        //Connection string upload to config file
-        public readonly string connstring = ConfigurationManager.ConnectionStrings["ConnStrDB"].ConnectionString.ToString();
+        public readonly string connstring = Properties.Settings.Default.DataS+ Properties.Settings.Default.ConnectionString + Properties.Settings.Default.DBName + ".s3db";
 
         //check password
         public bool CheckUserPassword(string user, string password)
@@ -45,16 +44,17 @@ namespace DatabasesPeopleWork.DataBases
                 cmd.Parameters.AddWithValue("@userl", txtUser);
                 cmd.Parameters.AddWithValue("@passwdl", txtPasswd);
 
-                var dr = cmd.ExecuteReader();
-                if (dr.HasRows == true)
-                {
-                    return true;
-                }
+                    var dr = cmd.ExecuteReader();
 
-                else
-                {
-                    return false;
-                }
+                if (dr.HasRows == true)
+                    {
+                        return true;
+                    }
+
+                    else
+                    {
+                        return false;
+                    }
             }
         }
     }

@@ -29,5 +29,10 @@ namespace DatabasesPeopleWork.DataBases
             LoginWindow.Visible = true;
         }
         #endregion
+
+        private void User_Window_Load(object sender, EventArgs e)
+        {
+            Data_txt.Text = DateTime.UtcNow.ToLocalTime().ToString();
+        }
     }
 }
