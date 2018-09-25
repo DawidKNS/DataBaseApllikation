@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("DatabasesPeopleWork")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("DatabasesPeopleWorkConfig")]
+[assembly: AssemblyCompany("ConfigDatabasesPeopleWork")]
 [assembly: AssemblyProduct("DatabasesPeopleWork")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]

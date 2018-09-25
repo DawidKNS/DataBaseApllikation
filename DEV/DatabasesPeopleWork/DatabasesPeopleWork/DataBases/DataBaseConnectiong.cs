@@ -15,8 +15,8 @@ namespace DatabasesPeopleWork.DataBases
 {
     public class DataBaseConnectiong
     {
+        //Settings connection string generator
         public readonly string connstring = Properties.Settings.Default.DataS+ Properties.Settings.Default.ConnectionString + Properties.Settings.Default.DBName + ".s3db";
-
         //check password
         public bool CheckUserPassword(string user, string password)
         {
