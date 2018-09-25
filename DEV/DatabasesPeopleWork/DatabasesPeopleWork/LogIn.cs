@@ -17,6 +17,8 @@ namespace DatabasesPeopleWork
         public LogIn()
         {
             InitializeComponent();
+
+            //getup user and password
         }
 
         #region button logIn
@@ -25,9 +27,8 @@ namespace DatabasesPeopleWork
             //connecting to Databases
             DataBaseConnectiong dataBaseConnectiong = new DataBaseConnectiong();
 
-            //getup user and password
-            string user = this.textBox_User.Text;
-            string password = this.textBox_password.Text;
+          string user = this.textBox_User.Text;
+          string password = this.textBox_password.Text;
 
             //check user and password
             if (dataBaseConnectiong.CheckUserPassword(user,password))
@@ -35,6 +36,7 @@ namespace DatabasesPeopleWork
                 //go to window appstart
                 User_Window AppStartDB = new User_Window(this);
                 this.Visible = false;
+                AppStartDB.Owner = this;
                 AppStartDB.ShowDialog();
 
                 //Clear textbox user and password, messagebox
