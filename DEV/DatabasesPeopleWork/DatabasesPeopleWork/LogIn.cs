@@ -17,15 +17,14 @@ namespace DatabasesPeopleWork
         public LogIn()
         {
             InitializeComponent();
-
-            //getup user and password
         }
         
         public void Button_login_Click(object sender, EventArgs e)
         {
-            //connecting to Databases
-            DataBaseConnectiong dataBaseConnectiong = new DataBaseConnectiong();
-
+          //connecting to Databases
+          DataBaseConnectiong dataBaseConnectiong = new DataBaseConnectiong();
+            
+          //getup user and password
           string user = this.textBox_User.Text;
           string password = this.textBox_password.Text;
 
@@ -60,6 +59,10 @@ namespace DatabasesPeopleWork
             textBox_User.Text = "";
             textBox_password.Text = "";
             MessageTXTlogin.Text = "";
+        }
+        public string user()
+        {
+            get{ return user = this.textBox_User.Text }
         }
     }
 }
