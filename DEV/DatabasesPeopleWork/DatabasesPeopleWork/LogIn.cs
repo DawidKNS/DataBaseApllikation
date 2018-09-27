@@ -20,8 +20,7 @@ namespace DatabasesPeopleWork
 
             //getup user and password
         }
-
-        #region button logIn
+        
         public void Button_login_Click(object sender, EventArgs e)
         {
             //connecting to Databases
@@ -49,9 +48,7 @@ namespace DatabasesPeopleWork
                 MessageTXTlogin.Text = "Uncorrect user or password";
             }
         }
-        #endregion
 
-        #region button Settings
         private void settingsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //go to window settings
@@ -64,6 +61,5 @@ namespace DatabasesPeopleWork
             textBox_password.Text = "";
             MessageTXTlogin.Text = "";
         }
-        #endregion
     }
 }
