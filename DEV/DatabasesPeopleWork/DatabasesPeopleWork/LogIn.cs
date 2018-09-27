@@ -14,21 +14,18 @@ namespace DatabasesPeopleWork
 {
     public partial class LogIn : Form
     {
+        public string user;
         public LogIn()
         {
             InitializeComponent();
-
-            //getup user and password
         }
 
-        #region button logIn
         public void Button_login_Click(object sender, EventArgs e)
         {
             //connecting to Databases
             DataBaseConnectiong dataBaseConnectiong = new DataBaseConnectiong();
-
-          string user = this.textBox_User.Text;
-          string password = this.textBox_password.Text;
+            string user = textBox_User.Text;
+            string password = this.textBox_password.Text;
 
             //check user and password
             if (dataBaseConnectiong.CheckUserPassword(user,password))
@@ -49,9 +46,7 @@ namespace DatabasesPeopleWork
                 MessageTXTlogin.Text = "Uncorrect user or password";
             }
         }
-        #endregion
 
-        #region button Settings
         private void settingsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //go to window settings
@@ -64,6 +59,10 @@ namespace DatabasesPeopleWork
             textBox_password.Text = "";
             MessageTXTlogin.Text = "";
         }
-        #endregion
+
+        public string User
+        {
+           get { return user = textBox_User.Text; }
+        }
     }
 }
