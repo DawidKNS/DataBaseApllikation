@@ -43,12 +43,10 @@ namespace DatabasesPeopleWork.DataBases
 
         private void User_Window_Load(object sender, EventArgs e)
         {
-            #region refresch clock
             Timer timer = new Timer();
             timer.Interval = (1 * 100); // 1 msecs
             timer.Tick += new EventHandler(timer_Tick);
             timer.Start();
-            #endregion
         }
         //Zegarek
         private void timer_Tick(object sender, EventArgs e)
