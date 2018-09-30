@@ -18,7 +18,6 @@ namespace DatabasesPeopleWork.DataBases
         public readonly string connstring = Properties.Settings.Default.DataS + Properties.Settings.Default.ConnectionString + Properties.Settings.Default.DBName + ".s3db";
 
         LogIn LoginWindow;
-        #region for windows back
         public User_Window(LogIn loginWindow)
         {
             InitializeComponent();
@@ -39,7 +38,6 @@ namespace DatabasesPeopleWork.DataBases
         {
             LoginWindow.Visible = true;
         }
-        #endregion
 
         private void User_Window_Load(object sender, EventArgs e)
         {
