@@ -36,13 +36,13 @@ namespace DatabasesPeopleWork.DataBases
                 string txtPasswd = password;
 
                 //select
-                string query = "SELECT * FROM users WHERE UsersName=@userl AND UsersPassword=@passwdl";
+                string query = "SELECT * FROM users WHERE UsersName=@user AND UsersPassword=@passwd";
 
                 //send select to databases
                 var cmd = new SQLiteCommand(query, con);
                 //check user and password
-                cmd.Parameters.AddWithValue("@userl", txtUser);
-                cmd.Parameters.AddWithValue("@passwdl", txtPasswd);
+                cmd.Parameters.AddWithValue("@user", txtUser);
+                cmd.Parameters.AddWithValue("@passwd", txtPasswd);
 
                     var dr = cmd.ExecuteReader();
 

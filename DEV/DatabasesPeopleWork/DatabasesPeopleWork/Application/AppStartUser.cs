@@ -1,23 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SQLite;
-using DatabasesPeopleWork;
 
 namespace DatabasesPeopleWork.DataBases
 {
     public partial class User_Window : Form
     {
-        //Settings connection string generator
-        public readonly string connstring = Properties.Settings.Default.DataS + Properties.Settings.Default.ConnectionString + Properties.Settings.Default.DBName + ".s3db";
-
         LogIn LoginWindow;
+
         public User_Window(LogIn loginWindow)
         {
             InitializeComponent();

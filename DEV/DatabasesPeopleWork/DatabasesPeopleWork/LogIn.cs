@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using DatabasesPeopleWork.DataBases;
 using DatabasesPeopleWork.Settings;
@@ -33,7 +26,6 @@ namespace DatabasesPeopleWork
                 //go to window appstart
                 User_Window AppStartDB = new User_Window(this);
                 this.Visible = false;
-                AppStartDB.Owner = this;
                 AppStartDB.ShowDialog();
 
                 //Clear textbox user and password, messagebox
