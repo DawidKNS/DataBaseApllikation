@@ -1,14 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Data.SQLite;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.Configuration;
 
 
 namespace DatabasesPeopleWork.DataBases
@@ -17,6 +8,7 @@ namespace DatabasesPeopleWork.DataBases
     {
         //Settings connection string generator
         public readonly string connstring = Properties.Settings.Default.DataS+ Properties.Settings.Default.ConnectionString + Properties.Settings.Default.DBName + ".s3db";
+
         //check password
         public bool CheckUserPassword(string user, string password)
         {
@@ -32,19 +24,23 @@ namespace DatabasesPeopleWork.DataBases
                     Console.WriteLine("{0} Exception caught.", OpenConnectionDB);
                 }
 
-                string txtUser = user;
-                string txtPasswd = password;
+               string txtUser = user;
+               string txtPasswd = password;
 
                 //select
                 string query = "SELECT * FROM users WHERE UsersName=@user AND UsersPassword=@passwd";
 
                 //send select to databases
                 var cmd = new SQLiteCommand(query, con);
+
                 //check user and password
                 cmd.Parameters.AddWithValue("@user", txtUser);
                 cmd.Parameters.AddWithValue("@passwd", txtPasswd);
+                var dr = cmd.ExecuteReader();
+                var t = dr.HasRows;
+                var z = dr.Read();
 
-                    var dr = cmd.ExecuteReader();
+                string AccoutTypeRead = string.Format("{0}", dr["AccountType"].ToString());
 
                 if (dr.HasRows == true)
                     {
@@ -55,7 +51,9 @@ namespace DatabasesPeopleWork.DataBases
                     {
                         return false;
                     }
-            }
-        }
+
+                }
+    }
+
     }
 }

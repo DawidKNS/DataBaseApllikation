@@ -1,19 +1,23 @@
 ﻿using System;
 using System.Windows.Forms;
+using System.Data.SQLite;
+using System.Data;
 
 namespace DatabasesPeopleWork.DataBases
 {
     public partial class User_Window : Form
     {
-        LogIn LoginWindow;
+        public readonly string connstring = Properties.Settings.Default.DataS + Properties.Settings.Default.ConnectionString + Properties.Settings.Default.DBName + ".s3db";
 
+        LogIn LoginWindow;
         public User_Window(LogIn loginWindow)
         {
             InitializeComponent();
             LoginWindow = loginWindow;
             Hallo_txt.Text = "Welcome " + LoginWindow.User.ToString() + " !";
+            string userR = LoginWindow.User.ToString();
 
-            if (LoginWindow.User.ToString() == "Admin")
+            if (userR == "Admin")
             {
                 BT_AddUser.Visible = true;
             }
@@ -38,12 +42,33 @@ namespace DatabasesPeopleWork.DataBases
         //Zegarek
         private void timer_Tick(object sender, EventArgs e)
         {
-            Data_txt.Text = DateTime.Now.ToString("yyyy-mmm-dd HH:mm:ss");
+            Data_txt.Text = "Data: " + DateTime.Now.ToString("yyyy-MM-dd") + " Godzina: " + DateTime.Now.ToString("HH:mm: ss");
         }
         
         private void BT_GoToDB_Click(object sender, EventArgs e)
         {
+            var con = new SQLiteConnection(connstring);
+            
+                //open comunication from databases
+                try
+                {
+                    con.Open();
+                }
+                catch (Exception OpenConnectionDB)
+                {
+                    Console.WriteLine("{0} Exception caught.", OpenConnectionDB);
+                }
 
+                //select
+                string query = "SELECT * FROM employeeData";
+            SQLiteDataAdapter connect4 = new SQLiteDataAdapter(query, con);
+            DataSet ds4 = new DataSet();
+            connect4.Fill(ds4);
+            dataGridViewDBP.DataSource = ds4.Tables[0];
+
+            text_whatViev.Text = "Baza Danych";
+
+            con.Close();
         }
 
         private void BT_AddUser_Click(object sender, EventArgs e)

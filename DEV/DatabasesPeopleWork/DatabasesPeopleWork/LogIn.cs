@@ -8,6 +8,7 @@ namespace DatabasesPeopleWork
     public partial class LogIn : Form
     {
         public string user;
+        public string password;
         public LogIn()
         {
             InitializeComponent();
@@ -55,6 +56,11 @@ namespace DatabasesPeopleWork
         public string User
         {
            get { return user = textBox_User.Text; }
+        }
+
+        public string Password
+        {
+            get { return password = textBox_password.Text; }
         }
     }
 }
