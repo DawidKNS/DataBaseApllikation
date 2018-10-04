@@ -2,6 +2,7 @@
 using System.Windows.Forms;
 using System.Data.SQLite;
 using System.Data;
+using DatabasesPeopleWork.Application;
 
 namespace DatabasesPeopleWork.DataBases
 {
@@ -47,8 +48,9 @@ namespace DatabasesPeopleWork.DataBases
         
         private void BT_GoToDB_Click(object sender, EventArgs e)
         {
-            var con = new SQLiteConnection(connstring);
-            
+            using (var con = new SQLiteConnection(connstring))
+            {
+
                 //open comunication from databases
                 try
                 {
@@ -61,14 +63,14 @@ namespace DatabasesPeopleWork.DataBases
 
                 //select
                 string query = "SELECT * FROM employeeData";
-            SQLiteDataAdapter connect4 = new SQLiteDataAdapter(query, con);
-            DataSet ds4 = new DataSet();
-            connect4.Fill(ds4);
-            dataGridViewDBP.DataSource = ds4.Tables[0];
+                SQLiteDataAdapter connect4 = new SQLiteDataAdapter(query, con);
+                DataSet ds4 = new DataSet();
+                connect4.Fill(ds4);
+                dataGridViewDBP.DataSource = ds4.Tables[0];
 
-            text_whatViev.Text = "Baza Danych";
+                text_whatViev.Text = "Baza Danych";
 
-            con.Close();
+            }
         }
 
         private void BT_AddUser_Click(object sender, EventArgs e)

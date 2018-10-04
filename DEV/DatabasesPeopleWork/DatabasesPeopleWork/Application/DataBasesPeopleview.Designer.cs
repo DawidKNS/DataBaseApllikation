@@ -1,6 +1,6 @@
-﻿namespace PeopleDatabase
+﻿namespace DatabasesPeopleWork.Application
 {
-    partial class AppStart
+    partial class DataBasesPeopleview
     {
         /// <summary>
         /// Required designer variable.
@@ -28,19 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // AppStart
-            // 
-            this.ClientSize = new System.Drawing.Size(284, 261);
-            this.Name = "AppStart";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AppStart_FormClosing);
-            this.ResumeLayout(false);
-
+            this.components = new System.ComponentModel.Container();
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Text = "DataBasesPeopleview";
         }
 
         #endregion
-
-        private System.Windows.Forms.MenuStrip menuStrip1;
     }
 }

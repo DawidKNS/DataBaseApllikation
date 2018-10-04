@@ -64,6 +64,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Application\DataBasesPeopleview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Application\DataBasesPeopleview.Designer.cs">
+      <DependentUpon>DataBasesPeopleview.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataBases\DataBaseConnectiong.cs" />
     <Compile Include="Application\AppStartUser.cs">
       <SubType>Form</SubType>
